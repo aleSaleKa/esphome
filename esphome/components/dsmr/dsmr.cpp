@@ -1,6 +1,6 @@
 #ifdef USE_ARDUINO
 
-#include "./dsmr.h"
+#include "dsmr.h"
 #include "esphome/core/log.h"
 
 #include <AES.h>
