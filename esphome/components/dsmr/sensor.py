@@ -18,7 +18,6 @@ from esphome.const import (
     UNIT_KILOVOLT_AMPS_REACTIVE_HOURS,
     UNIT_KILOVOLT_AMPS_REACTIVE,
     UNIT_VOLT,
-    UNIT_KILO_VOLT,
 )
 from . import Dsmr, CONF_DSMR_ID
 
@@ -209,19 +208,19 @@ CONFIG_SCHEMA = cv.Schema(
             state_class=STATE_CLASS_MEASUREMENT,
         ),
         cv.Optional("voltage_l1"): sensor.sensor_schema(
-            unit_of_measurement=UNIT_KILO_VOLT,
+            unit_of_measurement="kV",
             accuracy_decimals=3,
             device_class=DEVICE_CLASS_VOLTAGE,
             state_class=STATE_CLASS_MEASUREMENT,
         ),
         cv.Optional("voltage_l2"): sensor.sensor_schema(
-            unit_of_measurement=UNIT_KILO_VOLT,
+            unit_of_measurement="kV",
             accuracy_decimals=3,
             device_class=DEVICE_CLASS_VOLTAGE,
             state_class=STATE_CLASS_MEASUREMENT,
         ),
         cv.Optional("voltage_l3"): sensor.sensor_schema(
-            unit_of_measurement=UNIT_KILO_VOLT,
+            unit_of_measurement="kV",
             accuracy_decimals=3,
             device_class=DEVICE_CLASS_VOLTAGE,
             state_class=STATE_CLASS_MEASUREMENT,
