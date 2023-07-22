@@ -46,6 +46,7 @@ constexpr char units::V[];
 constexpr char units::mV[];
 constexpr char units::kV[];
 constexpr char units::A[];
+constexpr char units::kA[];
 constexpr char units::mA[];
 constexpr char units::m3[];
 constexpr char units::dm3[];
